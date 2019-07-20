@@ -1,0 +1,112 @@
+<!doctype HTML>
+
+<html lang="en">
+
+<head>
+    <title>6-Hour Weather</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="weather.css">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,500" rel="stylesheet">
+</head>
+
+<body>
+<div class = "bluebox" id = "bluebox">
+    <div class = "nondroppler">
+        <div class = "title">
+            <div class = "mainTitle">
+                Local Weather Six Hour Forecast
+            </div>
+            <div class = "subTitle">
+                Northern California with doppler radar
+            </div>
+        </div>
+        
+   
+
+        <div class = "search">
+            <div class = "words">
+                <p>Forecast for</p>
+            </div>
+                <div class = "searchpart">
+                     <input class = "searchtext" type="text" id="city" placeholder="Davis,CA"> 
+                    
+                    <div class = "submit">
+                        <input id = "submitText" type="button" onclick="inputs()" value="submit">
+                    </div>
+                </div>
+        </div>
+   
+    
+        
+ 
+        <div class = "Current">
+                <div class = "time">
+                    <p id = "currentText">current</p>
+                    <p id = "time"></p>
+                </div>
+               
+                <img id="icon" src = "" alt = "icon"></img>
+                
+                <div class = "temp" >
+                    <p id = "temperature"></p>     
+                </div>
+        </div>
+    </div>  
+        
+    <div class="picture">
+			<img id="img1"src="http://radar.weather.gov/ridge/Overlays/Topo/Short/DAX_Topo_Short.jpg">
+			<img id="img2"src="http://radar.weather.gov/ridge/Overlays/Cities/Short/DAX_City_Short.gif ">
+			<img id="img3" alt = "doppler">
+		</div>
+        
+        <div class = "myfooter"> 
+            <img onclick = "slideup()" id = "uparrow" src = "./assets/up-arrow.svg" alt = "slide-up"></img>
+        </div>
+ </div>
+
+
+
+
+    <div class="slideup" id = "slideup">
+            <div > 
+                    <img onclick = "slidedown()" id = "downarrow" src = "./assets/angle-arrow-down.svg" alt = "slide-up"></img>
+            </div>
+                <div class = "Forecast">
+                        <div class = "ForecastTime" id = "ForecastTime1"></div>
+                        <img class = "ForecastImg" id = "ForecastImage1" src = "" alt = "ForecastImage1"></img>
+                        <div class = "ForecastTemp" id = "ForecastTemp1"></div>
+
+                </div>
+                <div class = "Forecast">
+                        <div class = "ForecastTime"  id = "ForecastTime2"></div>
+                        <img class = "ForecastImg" id = "ForecastImage2" src = "" alt = "ForecastImage2"></img>
+                        <div class = "ForecastTemp" id = "ForecastTemp2"></div>
+                </div>
+                <div class = "Forecast">
+                        <div class = "ForecastTime" id = "ForecastTime3"></div>
+                        <img class = "ForecastImg" id = "ForecastImage3" src = "" alt = "ForecastImage3"></img>
+                        <div class = "ForecastTemp" id = "ForecastTemp3"></div>
+                </div>
+                <div class = "Forecast">
+                        <div class = "ForecastTime" id = "ForecastTime4"></div>
+                        <img class = "ForecastImg" id = "ForecastImage4" src = "" alt = "ForecastImage4"></img>
+                        <div class = "ForecastTemp" id = "ForecastTemp4"></div>
+                </div>
+                <div class = "Forecast">
+                        <div class = "ForecastTime" id = "ForecastTime5"></div>
+                        <img class = "ForecastImg" id = "ForecastImage5" src = "" alt = "ForecastImage5"></img>
+                        <div class = "ForecastTemp" id = "ForecastTemp5"></div>
+
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+    <script src="doppler.js"></script>
+    <script src = "arrow.js"></script>
+
+</body>
+
+</html>

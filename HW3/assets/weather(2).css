@@ -1,0 +1,402 @@
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////mobile version/////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media screen and (min-width: 300px) and (max-width: 480px) {
+
+body {
+    text-align: center;
+}
+
+.bluebox {
+    height:50%;
+    background: linear-gradient(rgb(73,138,220), rgb(98,59,156));
+    color: white;
+    padding-top: 100px;
+    display:flex;
+    flex-direction: column;
+}
+.title{
+    text-align: center;
+    font-family: 'IBM Plex Sans Medium', sans-serif;
+}
+.mainTitle {
+    font-size: 11vw;
+}
+.subtitle, .search {
+    flex-direction: column;
+    display:flex;
+    font-family: 'IBM Plex Sans Medium', sans-serif;
+}
+.subTitle {
+    padding:10px;
+    color:rgb(39,44,135);
+    font-size: 5vw;
+}
+
+.search {
+    flex-direction: column;
+    display:flex;
+}
+.words{
+    padding:20px;
+    padding-bottom: 20px;
+    font-family: 'IBM Plex Sans Medium', sans-serif;
+    font-size: 6vw;
+    text-align: left;
+}
+.searchbox{
+    display: flex;
+    width: 75%;
+}
+.searchtext{
+    height:35px;
+    margin: none;
+    background: rgb(39,44,135);
+    width: 100%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight:lighter;
+    font-size: 20px;
+}
+.searchpart{
+
+    margin:auto;
+    width: 90%;
+    margin-bottom: 20px;
+    flex-direction: row;
+    display:flex;
+    justify-items: left;
+}
+
+#submitText{
+    font-family: 'IBM Plex Sans Medium', sans-serif;
+    font-size: 15px;
+}
+.submit{
+    background: lightgrey;
+    padding-left:10px;
+    padding-right:10px;
+    display: flex;
+   
+}
+
+.input{
+   
+    border:none;
+    background:rgb(44,52,140);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight:lighter;
+}
+#icon{
+    padding:30px;
+    margin: auto;
+    width: 7em;
+}
+
+.Current{
+    width:50%;
+    margin:auto;
+    background:darkkhaki;
+  
+    margin-bottom: 70px;
+    font-family: 'Saira extra condensed',sans-serif;
+    font-weight: light;
+    background: rgb(14, 172, 245);
+    flex-direction: column;
+    display:flex;
+}
+
+.time{
+    width: 50%;
+    padding-left:10px;
+    padding-right:10px;
+    float: right;
+    
+}
+#time, #currentText{ 
+
+    font-size: 9vw;
+    background-color: black;
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+.temp{
+    width:50%;
+}
+#temperature{
+    border-left: solid;
+    border-left-width: 0.1px;
+    border-color: black;
+    background: green;
+    padding-left:10px;
+    padding-right:10px;
+    font-size: 90px;
+    margin:auto;
+  }
+    
+.picture{
+    display:none;
+}
+#uparrow,#downarrow {
+    height: 50px;
+    width:50%;
+    justify-items: left;
+}
+.myfooter{
+margin-bottom:20px;
+background: brown;
+}
+
+.slideup{
+
+    display: none;
+    flex-direction: column;
+    background: lightblue;
+}
+.Forecast{
+background: darkgoldenrod;
+width: 100%;
+flex-direction: row;
+display: flex;
+font-family: "Saira Extra Condensed",sans-serif;
+font-weight:lighter;
+border-bottom: solid;
+border-bottom-width: 0.1px;
+border-color: black;
+}
+
+.ForecastTime{
+    font-size:7vw;
+    margin:auto;
+
+}
+.ForecastTemp{
+    font-size:18vw;
+    margin:auto;
+}
+.ForecastImg{
+ 
+    margin: auto;
+    width: 25vw;
+   
+}
+
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////webversion/////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media screen and (min-width: 800px) {
+    body {
+        min-height: 100vh;
+        text-align: center;
+    }
+    
+    .bluebox {
+        flex-direction: row;
+        display:flex;
+        min-height: 40vh;
+        background: linear-gradient(rgb(73,138,220), rgb(98,59,156));
+        color: white;
+        padding-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 50px;
+        
+    }
+    .nondroppler{
+        flex-direction: column;
+        display:flex;
+        background:pink;
+        width:65%;
+    }
+   
+    .title{
+        background-color:lightblue;
+        margin-left:50px;
+        flex-direction: column;
+        display:flex;
+        text-align: center;
+        font-family: 'IBM Plex Sans Medium', sans-serif;
+    }
+    .mainTitle {
+        text-align: start;
+        font-size: 55px;
+        margin:15px;
+    }
+    .subTitle {
+        text-align: start;
+        margin:15px;
+        color:rgb(39,44,135);
+        font-size: 35px;
+    }
+    .subtitle, .search {
+        flex-direction: row;
+        display:flex;
+        font-family: 'IBM Plex Sans Medium', sans-serif;
+    }
+ 
+    
+    .search {
+        justify-content: space-around;
+        margin-bottom: 50px;
+        margin-top:20px;
+        flex-direction: row;
+        display:flex;
+    }
+
+    .words{
+        background:red;
+        padding:20px;
+        margin-left: 50px;
+        font-family: 'IBM Plex Sans Medium', sans-serif;
+        font-size: 20px;;
+        
+    }
+    .searchpart{
+        border:solid;
+        margin:auto;
+        width: 80%;
+        flex-direction: row;
+        display:flex;
+       
+    }
+    .searchtext{
+        height:35px;
+        width: 50%;
+        margin-left: 30px;
+        margin-right: 30px;
+        background: rgb(39,44,135);
+        
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight:lighter;
+        font-size: 20px;
+    }
+     .submit{
+        background: grey;
+        padding-left:10px;
+        padding-right:10px;
+        display: flex;
+       
+    }
+    #submitText{
+        
+        font-family: 'IBM Plex Sans Medium', sans-serif;
+        font-size: 15px;
+    }
+   
+    .input{
+        
+        background:rgb(44,52,140);
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight:lighter;
+    }
+    
+    
+
+
+    .Current{
+        padding:20px;
+        margin-left: 50px;
+        width: 60%;
+        justify-content: space-between;
+        font-family: 'Saira extra condensed',sans-serif;
+        font-weight: lighter;
+        background: rgb(14, 172, 245);
+        flex-direction: row;
+        display:flex;
+    }
+    #icon{
+        width: 7em;
+        height:7em;
+        background: darkcyan;
+    }
+    .time{
+        padding-left:10px;
+        padding-right:10px;
+    }
+    #time, #currentText{ 
+        font-size: 30px;
+        background-color: black;
+        padding:10px;
+    
+    }
+    
+    #temperature{
+        background: green;
+        padding-left:10px;
+        padding-right:10px;
+        font-size: 95px;
+        margin:auto;
+      }
+   
+   
+    #img1{
+		position: absolute;
+		top: 5vh;
+		right: 10vh;
+		clip-path: circle(40%);
+		max-width: 30vw;
+		height: auto;
+	}
+	#img2{
+		position: absolute;
+		top: 5vh;
+		right: 10vh;
+		z-index: 1000;
+		clip-path: circle(40%);
+		max-width: 30vw;
+		height: auto;
+	}
+	#img3{
+		position: absolute;
+		top: 5vh;
+		right: 10vh;
+		z-index: 500;
+		clip-path: circle(40%);
+		max-width: 30vw;
+		height: auto;
+	}
+    #downarrow,.myfooter{
+       display:none;
+    }
+    
+    .slideup{
+        flex-direction: row;
+        display:flex;
+        background: linear-gradient(grey,lightgrey,white,white,white, white,white);
+        
+    }
+    .Forecast{
+    border-right: solid;
+    border-width: 0.3px;
+
+    width: 100%;
+    min-height:30vh;
+    flex-direction: column;
+    display:flex;
+    font-family: "Saira Extra Condensed",sans-serif;
+    font-weight:lighter;
+    
+    }
+    
+    .ForecastTime{
+        font-size:20px;
+        margin:auto;
+    
+    }
+    .ForecastTemp{
+        font-size:68px;
+        margin:auto;
+      
+    }
+    .ForecastImg{
+     
+        margin: auto;
+        width: 7em;
+       
+    }
+    
+    }
+    

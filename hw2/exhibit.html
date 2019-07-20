@@ -1,0 +1,181 @@
+<!doctype HTML>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="exhibit.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:200,500" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:200,500" rel="stylesheet">
+  </head>
+
+  <body>
+			<div class="menu"> 
+				<div class="museum_name">
+					<span class="name"> jan shrem and maria </span>
+					<span class="name2"> &nbsp;manetti shrem museum </span>
+					<span class="name3"> &nbsp;of art </span>
+				</div>
+				
+				<div class="navigation">
+					<div class="home"> <p>Home</p> </div>
+					<div><p>|</p></div>
+					<div class="about"> <p>About</p> </div>
+					<div><p>|</p></div>
+					<div class="contact">	<p>Contact</p> </div>
+				</div>	
+			</div>
+
+    <header>
+			<div class="headimg">
+				<img class="titlepic" src="../assets/corridorInstallation.jpg" alt="The Corridor">
+			</div>
+			<div class="head">
+				<h1 class="artist">Bruce Nauman</h1>
+				<h2 class="artwork">Blue and Yellow Corridor</h2>
+			</div>
+    </header>
+
+    <main>
+<div id="box">
+			<div class = "s1">
+				<div class = "s1-img">
+					<img class="firstpic" src="../assets/bruceSketch.jpg" alt="The Sketch of the Corridor" id = "sketch">
+				</div>
+				<div class = "s1-word">
+					<h1 class = "ex" >Extended through April 14th</h1>
+					<h2 class = "guest" >Guest Curator: Ted Mann</h2>
+					<hr>
+    	  			<p>
+						Coinciding with the opening of Bruce Nauman’s (MFA ’66, UC
+						Davis) retrospective at The Museum of Modern Art, New York,
+						this exhibition features the first realization of a
+						participatory environment Nauman conceived in 1970. The work
+						is a narrow passageway that wraps around an existing room,
+						combining colored fluorescent light and closed-circuit video
+						to manipulate the viewer’s perceptual experience. An adjacent
+						gallery includes artworks that situate the corridor within the
+						artist’s career.
+					</p>
+				</div>
+				
+			</div>
+			
+			<div class = "s2">	
+				<div class="s2-word">
+					<div class="s2p1">
+						<p>
+								Few living artists have done as much to expand the boundaries
+								of art since 1960 as Bruce Nauman. During the mid-late 1960s -
+								beginning with his time as a graduate student in the UC Davis
+								studio art program, where he received his MA in 1966 - Nauman
+								was at the forefront of a generation of artists that placed
+								process and activity over static, predetermined forms, and
+								that took up language and the body as materials. Unbound by
+								traditional divisions of medium, Nauman has moved freely
+								between sculpture, performance, film, video, photography,
+								drawing, printmaking, and large-scale installation.
+						</p>
+					</div>
+					<div class="s2floating">
+						<div class = "s2-img">
+							<img id="secondpic" src="../assets/bruceInGreenCorridor.jpg" alt="Bruce in the Corridor">
+						</div>
+						<div class="s2p2">
+							<p>
+									This exhibition coincides with a major Nauman retrospective,
+									co-organized by The Museum of Modern Art (MoMA) and the
+									Schaulager Basel, the artist's first in over twenty
+									years. While the retrospective provides an opportunity to
+									survey the full breadth of Nauman's work, the present
+									exhibition at the Manetti Shrem Museum focuses on a single,
+									exceptional artwork: a large-scale participatory environment
+									from 1970-71. Between 1969 and 1976, Nauman designed some
+									forty corridors, rooms, and other architectural installations.
+									The majority of these installations have been built for
+									exhibition on at least one occasion, but Blue and Yellow
+									Corridor is one of a handful that have remained on paper, in
+									the form of drawings by the artist. Although Nauman originally
+									developed the concept for this particular work in three
+									drawings of 1970-1971, this exhibition represents the first
+									time that the installation has actually been realized.
+							</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+</div>
+		</main>
+		
+		<div class="footer">
+			<div class="Address">
+				<footer1>Manetti Shrem Museum</footer1>
+				<footer2>
+					<p>254 Old Davis Rd.<br>
+						Davis, CA 95616</p>
+				</footer2>
+			</div>
+		
+			<div class="Hours">
+				<footer1>Hours</footer1>
+				<footer2>
+					<p>Tuesday, Wednesday and Friday: Noon–6 pm<br>
+						Thursday: Noon–9 pm<br>
+						Saturday-Sunday: 11 am–5 pm<br>
+						Monday: Closed<br>
+					</p>
+				</footer2>
+		
+			</div>
+		</div>
+
+
+  </body>
+
+
+
+
+  <script type="text/javascript"> 
+
+	function show()
+{ 
+  var box = document.getElementById("box");
+  //var flag = 1;
+  var text = box.innerHTML; 
+  //var text2 = box.innerHTML;
+  var newBox = document.createElement("div");
+  var btn = document.createElement("a");
+  //var newBox2 = document.createElement("div"); 
+  newBox.innerHTML = text.substring(0,620); 
+  btn.innerHTML = text.length > 200 ? "Read more" : ""; 
+  btn.href = "###"; 
+  btn.onclick = function(){ 
+    if(btn.innerHTML == "Read more")
+    { 
+      btn.innerHTML = "Read less"; 
+      newBox.innerHTML = text;
+    //  newBox2.innerHTML = text.substring(3712,4500);
+    }
+    else
+    { 
+      btn.innerHTML = "Read more";
+      newBox.innerHTML = text.substring(0,620); 
+     // newBox2.innerHTML = "";
+    } 
+  } 
+  box.innerHTML = ""; 
+  box.appendChild(newBox); 
+  box.appendChild(btn);
+//  box.appendChild(newBox2);
+}
+
+window.onload=function()
+{
+  show(); 
+}
+	</script>
+
+  </html>
+
